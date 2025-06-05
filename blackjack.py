@@ -318,7 +318,12 @@ def draw_game(game: BlackjackGame, buttons: list[Button]) -> None:
     screen.blit(title, (WIDTH // 2 - title.get_width() // 2, 20))
 
     # Cartas del dealer
-    dealer_score = game.dealer.score if game.dealer.hand[1].visible else "?"
+    if len(game.dealer.hand) >= 2:
+        dealer_score = (
+            game.dealer.score if game.dealer.hand[1].visible else "?"
+        )
+    else:
+        dealer_score = game.dealer.score
     dealer_text = font.render(f"Crupier: {dealer_score}", True, WHITE)
     screen.blit(dealer_text, (50, 80))
     game.dealer.draw_hand(50, 120)
