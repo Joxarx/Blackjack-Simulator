@@ -4,6 +4,9 @@ Pequeño simulador de **Blackjack** escrito con `pygame`.
 
 ## Requisitos
 
+- Python 3.10 o superior (por el uso de "union types")
+- Instalar pygame:
+
 ```
 pip install pygame
 ```
