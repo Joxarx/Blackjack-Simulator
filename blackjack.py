@@ -227,7 +227,6 @@ class BlackjackGame:
         self.losses = 0
         self.bank = 100
         self.bet = 10
-        self.new_round_initialized = False
 
     def new_game(self) -> None:
         self.deck = Deck()
@@ -237,7 +236,6 @@ class BlackjackGame:
         self.game_state = "betting"
         self.message = "Ajusta tu apuesta"
         self.result = ""
-        self.new_round_initialized = False
 
     def start_round(self, buttons: list["Button"]) -> None:
         if self.bet > self.bank:
