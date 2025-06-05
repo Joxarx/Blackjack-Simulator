@@ -5,10 +5,10 @@ Pequeño simulador de **Blackjack** escrito con `pygame`.
 ## Requisitos
 
 - Python 3.10 o superior (por el uso de "union types")
-- Instalar pygame:
+- Instalar pygame y matplotlib:
 
 ```
-pip install pygame
+pip install pygame matplotlib
 ```
 
 ## Uso
@@ -21,6 +21,6 @@ python blackjack.py
 
 ## Características
 
-- Reparto automático de cartas
-- Marcador de victorias y derrotas
-- Interfaz sencilla con botones para *Pedir*, *Plantarse* y *Nuevo Juego*
+- Reparto automático de cartas con animaciones
+- Marcador de victorias y derrotas y banco de fichas
+- Interfaz con fichas de apuesta y botón para ver estadísticas gráficas
