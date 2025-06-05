@@ -12,7 +12,7 @@ pygame.init()
 # Dimensiones de la ventana
 WIDTH, HEIGHT = 800, 600
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption("Blackjack - by DeepSeek")
+pygame.display.set_caption("Blackjack - by Joxarx")
 
 # Colores
 BACKGROUND = (7, 99, 36)
